@@ -1,0 +1,6 @@
+This is a game i created as a solo project for my javascript exams. It is heavily inspired by the game submachine which is a series of free browser-based point‑and‑click puzzle-adventure games known for their eerie, silent environments and immersive exploration. 
+The player navigates through a series of interconnected rooms, solving environmental puzzles to advance. 
+I took levels from this game and using photoshop i changed the enviroment to make a new addition to the submachine series which i named "submachino a game made ny marino".
+Using intricate JS code in combination with HTML and CSS i made my own puzzles which are comprised of a "find the difference game where i took a wheres waldo picture and edited out some people in order to make the player look for 7 differences,
+the second puzzle puts you in a room filled with buttons and by using the hints given to the player via graffiti on the wall you are to find which button open the door. And in the final room you have a combination lock in the center of the room which has when you make a guess,
+using colors it guides you to the correct password. Finally after completing all puzzles and aquiring all pieces of the amulet you go back to the first room in which you place the pieces in the designated position and a door opens leading you to the outside.
