@@ -4,3 +4,5 @@ I took levels from this game and using photoshop i changed the enviroment to mak
 Using intricate JS code in combination with HTML and CSS i made my own puzzles which are comprised of a "find the difference game where i took a wheres waldo picture and edited out some people in order to make the player look for 7 differences,
 the second puzzle puts you in a room filled with buttons and by using the hints given to the player via graffiti on the wall you are to find which button open the door. And in the final room you have a combination lock in the center of the room which has when you make a guess,
 using colors it guides you to the correct password. Finally after completing all puzzles and aquiring all pieces of the amulet you go back to the first room in which you place the pieces in the designated position and a door opens leading you to the outside.
+
+You can find the game @: https://shqk1n.github.io/Browser-JS-Game/
