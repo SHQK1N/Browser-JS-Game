@@ -1,0 +1,114 @@
+body {
+    background: #e0e0e0;
+}
+.lock-cage {
+    background: #222;
+    border: 8px solid #888;
+    border-radius: 30px;
+    box-shadow: 0 8px 32px #0008, 0 1px 0 #fff4 inset;
+    width: 420px;
+    margin: 80px auto 0 auto;
+    padding: 40px 30px 30px 30px;
+    position: relative;
+}
+.lock-cage:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 60px;
+    border: 10px solid #888;
+    border-bottom: none;
+    border-radius: 60px 60px 0 0;
+    background: #222;
+    z-index: 2;
+}
+.bars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.bars div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: #bbb;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+.bars .bar1 { left: 60px; }
+.bars .bar2 { left: 140px; }
+.bars .bar3 { left: 220px; }
+.bars .bar4 { left: 300px; }
+.bars .bar5 { left: 380px; }
+.lock {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+}
+.digit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+}
+.number {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.8em;
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: background 0.2s;
+    background: #fff;
+}
+.blue { background: #3af !important; color: #fff; }
+.red { background: #f33 !important; color: #fff; }
+.green { background: #3c3 !important; color: #fff; }
+button {
+    width: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: #eee;
+    border: 1px solid #888;
+    border-radius: 6px;
+    margin: 2px 0;
+    transition: background 0.2s;
+}
+button:active {
+    background: #ccc;
+}
+.lock-btn, .try-again-btn {
+    display: block;
+    margin: 40px auto 0 auto;
+    width: 180px;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #444;
+    color: #fff;
+    box-shadow: 0 2px 8px #0003;
+    transition: background 0.2s;
+}
+.lock-btn:hover, .try-again-btn:hover {
+    background: #666;
+}
+.try-again-btn {
+    margin-top: 20px;
+    background: #888;
+}

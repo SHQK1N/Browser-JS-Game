@@ -1,0 +1,2 @@
+# Stylesheets are not counted in the language bar
+*.css linguist-detectable=false

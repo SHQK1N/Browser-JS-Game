@@ -1,0 +1,658 @@
+        body{
+            background:white;
+            overflow: hidden;
+        }
+
+        img{
+            height:1080px;
+            width:1920;
+        }
+
+        button{
+            position:relative;
+            top:500px;
+            left:800px;
+            height:30px;
+            width:300px;
+            cursor:pointer;
+        }
+
+        button#myB {
+            position: absolute;
+            top: 460px;
+            left: 750px;
+            height: 80px;
+            width: 400px;
+            font-size: 2.2em;
+            border-radius: 20px;
+            background: #222;
+            color: #fff;
+            border: 4px solid #888;
+            box-shadow: 0 8px 32px #0008, 0 1px 0 #fff4 inset;
+            cursor: pointer;
+            z-index: 1000;
+            transition: background 0.2s, color 0.2s;
+        }
+
+    button#myB:hover {
+        background: #444;
+        color: #ff0;
+    }
+
+        .Start{
+            z-index:10;
+            position:fixed;
+            top:0;
+            left: 0;
+            width:100vw;
+            height:100vh;
+            background: #000;
+        }
+
+        .Start img#myP {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1920px;
+        height: 1080px;
+        z-index: 1;
+    }
+
+        .Lobby{
+            height:1080px;
+            width:1920;
+            display:none;
+            z-index:1;
+            position:fixed;
+            top:0;
+            left: 0;
+            width:100%;
+            height:100%;
+        }
+
+        .barracks{
+            position:fixed;
+            top: 520px;
+            left: 1245px;
+            width:151px;
+            height:438px;
+            display:block;
+        }
+
+        .LeftRoom{
+            height:1080px;
+            width:1920;
+            display:none;
+            z-index:1;
+            position:fixed;
+            top:0;
+            left: 0;
+            width:100%;
+            height:100%;
+        }
+
+        .pointerr{
+            position:fixed;
+            z-index:2;
+            height:30px;
+            width:30px;
+            top:700px;
+            left:148px;
+        }
+
+        .LobbyLefty{
+            position: fixed;
+            z-index: 2;
+            height:430px;
+            width:30px;
+            top: 462px;
+            left:100px;
+            cursor:pointer;
+        }
+
+        .LobbyRighty{
+            position: fixed;
+            height:430px;
+            width:30px;
+            top:580px;
+            left:1313px;
+            cursor:pointer;
+        }
+
+
+
+
+
+
+/****  Find the Difference Game  CSS****/
+
+    .FindTheDifference{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width:980px;
+        height:520px;
+        z-index: 110;
+        display: none;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Optional: for effect */
+    }
+
+	h1{
+		text-align:center;
+        z-index:110;
+        position:absolute;
+        top:250px;
+        left:700px; 
+	}
+
+    .hidden{
+      display:none;
+      position:absolute;
+      z-index:110;
+      height:60px;
+      width:60px;
+    }
+
+    .canva{
+      position:relative;
+      top:200px;
+      left:36px;
+      width:980px;
+      height:520px;
+      margin:auto;
+      border:4px solid grey;
+      z-index:110;
+    }
+
+    .Artboard{
+      box-sizing: border-box;
+      z-index:110;
+      width:980px;
+      height:520px;
+    }
+
+    .rooming{
+        position:fixed;
+        top:0;
+        left: 0;
+        width:100%;
+        height:100%;
+        z-index:-1;
+    }
+
+    map{
+        position:absolute;
+        width:980px;
+        height:520px;
+        top:0;
+        left:0;
+    }
+
+    area.spot1, area.spot2, area.spot3, area.spot4, area.spot5, area.spot6, area.spot7{
+        position:absolute;
+        z-index:111;
+    }
+
+    .highlit{
+        height:60px !important;
+        width:60px !important;
+    }
+
+    .Righty{
+        position: fixed;
+        height:430px;
+        width:30px;
+        top:580px;
+        left:1313px;
+        cursor:pointer;
+    }
+
+
+/**** End of Find the Difference Game CSS  ****/
+
+/**** Start of Right Room CSS ****/
+
+    .RightRoom{
+        height:1080px;
+        width:1920px;
+        display:none;
+        z-index:1;
+        position:fixed;
+        top:0;
+        left: 0;
+        width:100%;
+        height:100%;
+        z-index: 100;
+    }
+
+    .LobbyLefty2{
+       position: fixed;
+        z-index: 2;
+        height:430px !important;
+        width:50px !important;
+        top: 462px;
+        left:165px;
+        cursor:pointer;
+        display:none;
+    }
+
+    .barracks2{
+        position:fixed;
+        top: 520px;
+        left: 1258px;
+        width:151px;
+        height:438px;
+        display:none;
+    }
+
+    .button1{
+        position: fixed;
+        top: 438px;
+        left: 372px;
+        width: 400px;
+        height: 233px;
+        display: block;
+    }
+
+    .RightRighty{
+        position: fixed;
+        height:430px;
+        width:30px;
+        top:570px;
+        left:1313px;
+        cursor:pointer;
+        display: none;
+    }
+/**** End of Right Room CSS ****/
+
+/**** Items CSS ****/
+    .item1_1{
+        height:106px;
+        width:106px;
+        position:absolute;
+        left:1510px;
+        top: 570px;
+        display:none;
+    }
+
+    .item1_2{
+        height:106px;
+        width:106px;
+        position:absolute;
+        left:1318px;
+        top: 462px;
+        display:none;
+
+    }
+
+    .item1_3{
+        height:106px;
+        width:106px;
+        position:absolute;
+        left:1510px;
+        top: 570px;
+        display:none;
+
+    }
+
+    .item1_4{
+        height:106px;
+        width:106px;
+        position:absolute;
+        left:1510px;
+        top: 570px;
+        display:none;
+
+    }
+
+    .item2_1{
+        height: 106px;
+        width: 106px;
+        position: absolute;
+        left: 1740px;
+        top: 570px;
+        display:none;
+    }
+
+    .item2_2{
+        height: 106px;
+        width: 106px;
+        position: absolute;
+        left: 1592px;
+        top: -130px;
+        display: none;
+    }
+
+    .item2_3{
+        height: 106px;
+        width: 106px;
+        position: absolute;
+        left: 1740px;
+        top: 570px;
+        display: none;
+    }
+
+    .item2_4{
+        height: 106px;
+        width: 106px;
+        position: absolute;
+        left: 1740px;
+        top: 570px;
+        display: none;
+    }
+
+    .item3_1{
+        height:106px;
+        width:106px;
+        position:absolute;
+        left:1520px;
+        top: 750px;
+        display:none;
+    }
+
+    .item3_2{
+        height:106px;
+        width:106px;
+        position:absolute;
+        left:1520px;
+        top: 750px;
+        display:none;
+
+    }
+
+    .item3_3{
+        height: 106px;
+        width: 106px;
+        position: absolute;
+        left: 1520px;
+        top: 750px;
+        display: none;
+        }
+
+    .item3_4{
+        height: 106px;
+        width: 106px;
+        position: absolute;
+        left: 1520px;
+        top: 750px;
+        display: none; 
+    }
+
+
+/**** End of Item CSS ****/
+
+/**** Last Room CSS ****/
+    .LastRoom{
+        height:1080px;
+        width:1920px;
+        display:none;
+        z-index:1;
+        position:fixed;
+        top:0;
+        left: 0;
+        width:100%;
+        height:100%;
+    }
+
+    .LastLefty{
+        position: fixed;
+        z-index: 2;
+        height:430px;
+        width:30px;
+        top: 462px;
+        left:100px;
+        cursor:pointer;
+    }
+
+
+/**** End of Last Room CSS ****/
+
+    .Almost {
+        left: 520px;
+        top: 200px;
+        position: absolute;
+        display: none;
+        z-index: 100;
+        height: 300px;
+        width: 400px;
+    }
+
+    .finished {
+        top: 200px;
+        left: 520px;
+        position: absolute;
+        display: none;
+        z-index: 101;
+        height: 300px;
+        width: 400px;
+    }
+
+    .exit {
+        position: absolute;
+        top: -470px;
+        left: -360px;
+        height: 1080px;
+        width: 1920px;
+        display: none;
+    }
+
+    .zahad{
+        position: absolute;
+        top:0px;
+        left:0px;
+    }
+
+    .exit2 {
+        display: none;
+        position: absolute;
+        height: 379px;
+        width: 174px;
+        top: -200px;
+        z-index: 100000;
+        left: 520px;
+        cursor:pointer;
+    }
+
+    /* ...existing styles... */
+    .lock-cage {
+        background: #222;
+        border: 8px solid #888;
+        border-radius: 30px;
+        box-shadow: 0 8px 32px #0008, 0 1px 0 #fff4 inset;
+        width: 420px;
+        padding: 40px 30px 30px 30px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        z-index: 2000;
+        text-align: center;
+    }
+    .lock {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 30px;
+        position: relative;
+        z-index: 2;
+    }
+    .digit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+    }
+    .digit button {
+        width: 38px;
+        font-size: 1.2em;
+        cursor: pointer;
+        background: #eee;
+        border: 1px solid #888;
+        border-radius: 6px;
+        margin: 2px 0;
+        transition: background 0.2s;
+    }
+    .number {
+        width: 38px;
+        height: 38px;
+        text-align: center;
+        line-height: 38px;
+        font-size: 1.8em;
+        border: 2px solid #333;
+        border-radius: 8px;
+        margin: 5px 0;
+        transition: background 0.2s;
+        background: #fff;
+    }
+    .blue { background: #3af !important; color: #fff !important; }
+    .red { background: #f33 !important; color: #fff !important; }
+    .green { background: #3c3 !important; color: #fff !important; }
+    .lock-btn, .try-again-btn {
+        display: block;
+        margin: 40px auto 0 auto;
+        width: 180px;
+        font-size: 1.2em;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        background: #444;
+        color: #fff;
+        box-shadow: 0 2px 8px #0003;
+        transition: background 0.2s;
+        z-index: 3;
+    }
+    .lock-btn:hover, .try-again-btn:hover {
+        background: #666;
+    }
+    .try-again-btn {
+        margin-top: 20px;
+        background: #888;
+    }
+
+.lock-cage {
+    background: #222;
+    border: 8px solid #888;
+    border-radius: 30px;
+    box-shadow: 0 8px 32px #0008, 0 1px 0 #fff4 inset;
+    width: 420px;
+    padding: 40px 30px 30px 30px;
+    position: fixed; /* Changed from relative to fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; /* Remove margin to center perfectly */
+    z-index: 2000; /* High z-index to ensure it's above other elements */
+}
+.lock-cage:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 60px;
+    border: 10px solid #888;
+    border-bottom: none;
+    border-radius: 60px 60px 0 0;
+    background: #222;
+    z-index: 2;
+}
+.bars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.bars div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: #bbb;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+.bars .bar1 { left: 60px; }
+.bars .bar2 { left: 140px; }
+.bars .bar3 { left: 220px; }
+.bars .bar4 { left: 300px; }
+.bars .bar5 { left: 380px; }
+.lock {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+}
+.digit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+}
+.digit button {
+    top: -0px;
+    left: -00px;
+    position: relative;
+    width: 38px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: #eee;
+    border: 1px solid #888;
+    border-radius: 6px;
+    margin: 2px 0;
+    transition: background 0.2s;
+}
+.number {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.8em;
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: background 0.2s;
+    background: #fff;
+}
+.blue { background: #3af !important; color: #fff !important; }
+.red { background: #f33 !important; color: #fff !important; }
+.green { background: #3c3 !important; color: #fff !important; }
+.lock-btn, .try-again-btn {
+    display: block;
+    margin: 40px auto 0 auto;
+    width: 180px;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #444;
+    color: #fff;
+    box-shadow: 0 2px 8px #0003;
+    transition: background 0.2s;
+    z-index: 3;
+}
+.lock-btn:hover, .try-again-btn:hover {
+    background: #666;
+}
+
+.lock-btn {
+        left: 10px;
+        top: -40px;
+        background: #888;
+        z-index: 99999;
+}
+.try-again-btn {
+    left: 10px;
+    top: -40px;
+    background: #888;
+    z-index: 99999;
+}
